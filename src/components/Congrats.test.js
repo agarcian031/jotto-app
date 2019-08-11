@@ -6,6 +6,7 @@ import {findByTestAttr, checkProps} from '../../test/testUtils';
 
 Enzyme.configure({adapter: new EnzymeAdapter() }); 
 
+const defaultProps = {success: false}; 
 
 // will take the props in the props object and spread it within the react component in key value pairs 
 /**
@@ -15,18 +16,19 @@ Enzyme.configure({adapter: new EnzymeAdapter() });
  * @returns {ShallowWrapper}
  */
 const setup = (props={}) => {
-  return shallow(<Congrats {...props}/>)
+  const setupProps = {...defaultProps, ...props}
+  return shallow(<Congrats {...setupProps}/>)
 }
 
 test('renders without error', () => {
-  const wrapper = setup({success: false}); 
+  const wrapper = setup(); 
   const component = findByTestAttr(wrapper, 'component-congrats'); 
   expect(component.length).toBe(1); 
 
 }); 
 
 test('renders no text when `success` prop is false', () => {
-  const wrapper = setup({success: false}); 
+  const wrapper = setup(); 
   const component = findByTestAttr(wrapper, 'component-congrats'); 
   expect(component.text()).toBe(''); 
   
