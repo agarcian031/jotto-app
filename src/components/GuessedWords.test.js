@@ -30,3 +30,11 @@ test('does not throw warning with expected props', () => {
 
 })
 
+//  describe is just a way of grouping tests 
+describe('if there are no words guessed', () => {
+
+}); 
+
+describe('if there are words guessed', () => {
+
+}); 
