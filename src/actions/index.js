@@ -1,12 +1,12 @@
 export const actionTypes = {
   CORRECT_GUESS: 'CORRECT_GUESS', 
+  GUESS_WORD: 'GUESS_WORD', 
 
 
 }; 
 
-// redux actions are objects that have a type key and some kind of payload 
-export function correctGuess() {
-  return {
-    type: actionTypes.CORRECT_GUESS
-  }
-}
+export const guessWord = (guessedWord) => {
+  return function(dispatch, getState) {
+
+  }; 
+}; 
