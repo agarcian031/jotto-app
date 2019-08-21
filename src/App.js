@@ -15,12 +15,14 @@ export class UnconnectedApp extends Component  {
   }
   render() {
     return (
-      <div className="container">
-        <h1>Jotto</h1>
+      <div className="container text-center mt-5">
+          <div className=" bg-light card card-body mb-4 p-4">
+        <h1 className="display-4 text-center">Jotto</h1>
         <div>This secret word is {this.props.secretWord}</div>
         <Congrats success={this.props.success} />
         <Input/>
         <GuessedWords guessedWords={this.props.guessedWords}/>
+        </div>
       </div>
     );
   }
