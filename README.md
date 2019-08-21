@@ -2,7 +2,7 @@
 ---
 ### React Testing Practing Using Jest & Enzyme
 
-Jotto is a guessing word game and web application that will allow you to make a certain number of guesses to figure out the hidden word. I created this application using React and Redux, and my goal was practice TDD (test driven development) using Jest and Enzyme. I wanted to create and plan an application by writing tests for the functionality first before programming. It contains tests for changes to displays, tests for Redux Thunk, tests for axios calls to an API server, tests for state props, redux props, action creator calls, etc.
+> Jotto is a guessing word game and web application that will allow you to make a certain number of guesses to figure out the hidden word. I created this application using React and Redux, and my goal was practice TDD (test driven development) using Jest and Enzyme. I wanted to create and plan an application by writing tests for the functionality first before programming. It contains tests for changes to displays, tests for Redux Thunk, tests for axios calls to an API server, tests for state props, redux props, action creator calls, etc.
 
 #### Installing: 
 - Clone or fork the github repository. 
